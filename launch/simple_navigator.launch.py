@@ -31,7 +31,7 @@ def generate_launch_description():
         ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(get_package_share_directory('robotont_description'), 'launch/display_simulated_robot.launch.py')
+                os.path.join(get_package_share_directory('robotont_description'), 'launch/display_robot_model.launch.py')
             ),
             launch_arguments={'rviz_fixed_frame': 'odom'}.items()
         )
